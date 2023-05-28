@@ -21,6 +21,7 @@ df_2016 = pd.read_sql("SELECT ldesemp, mdesemp, isocioa\
 
 
 
+
 #  GET AVG FROM SPANISH AND MATH GRADES AND SOCIOECONOMIC INDEX. 
 # From column replace empty values, then convert all to integers to finally get their mean.
 
@@ -68,7 +69,6 @@ l_avg_2021 = ((df_2021['ldesemp'].replace(' ', 0)).astype(int)).mean()
 
 i_avg_2021 = (((df_2021['NSE_puntaje'].replace(' ', 0)).str.replace(',', '.')).astype(float)).mean() 
 # print(i_avg_2021)
-
 
 
 
@@ -122,3 +122,5 @@ plt.ylim(0, max((max(values_ldesemp)),(max(values_isocioa)),(max(values_mdesemp)
 plt.xticks(range(len(categories)), categories)
 plt.legend()
 plt.show()
+
+--
