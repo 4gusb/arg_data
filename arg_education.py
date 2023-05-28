@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 
 # CONNECTION
 try:
-    conn = mysql.connector.connect(user="root", password="maravilla47",
-                                    host= "localhost", 
-                                    database="curso",
-                                    port="3306")
+    conn = mysql.connector.connect(user="", password="",
+                                    host= "", 
+                                    database="",
+                                    port="")
     print("MySQL Database connection successful")
 except:
     print("Error")
