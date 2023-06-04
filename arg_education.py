@@ -94,33 +94,9 @@ plt.bar(xpos + 0.2, values_2018, width, color="#3498DB", label = '2018')
 plt.bar(xpos + 0.4, values_2021, width, color="#F1C40F", label = '2021')
 plt.xticks(range(len(categories)), ['SPANISH LEVEL', 'MATHS LEVEL', 'SOCIOEC INDEX'])
 plt.ylim(0, max((max(values_2016)),(max(values_2018)),(max(values_2021))) + 1)
+plt.title("COMPARISON OF EDUCATIONAL RESULTS")
 plt.legend()
 plt.show()
 
-
-
-# PLOT PER VARIABLES
-
-# ------PLOT INFO-------
-
-categories = ["2016", "2018", "2021"]
-values_mdesemp = [m_avg_2016, m_avg_2018, m_avg_2021]
-values_ldesemp = [l_avg_2021, l_avg_2021, l_avg_2021]
-values_isocioa = [i_avg_2016, i_avg_2018, i_avg_2021]
-
-width = 0.2
-xpos = np.arange(len(categories))
-
-
-# ------PLOT-------
-
-
-plt.bar(xpos, values_mdesemp, width, color="#11009E", label = 'MATHS LEVEL')
-plt.bar(xpos + 0.2, values_ldesemp, width, color="#3498DB", label = 'SPANISH LEVEL')
-plt.bar(xpos + 0.4, values_isocioa, width, color="#F1C40F", label = 'SOCIOEC INDEX')
-plt.ylim(0, max((max(values_ldesemp)),(max(values_isocioa)),(max(values_mdesemp))) + 1)
-plt.xticks(range(len(categories)), categories)
-plt.legend()
-plt.show()
 
 --
